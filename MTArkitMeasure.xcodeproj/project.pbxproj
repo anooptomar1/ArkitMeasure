@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		1028A7931FAE79D0009CF5C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1028A7921FAE79D0009CF5C9 /* AppDelegate.swift */; };
 		1028A7951FAE79D0009CF5C9 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1028A7941FAE79D0009CF5C9 /* art.scnassets */; };
-		1028A7971FAE79D0009CF5C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1028A7961FAE79D0009CF5C9 /* ViewController.swift */; };
 		1028A79A1FAE79D0009CF5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1028A7981FAE79D0009CF5C9 /* Main.storyboard */; };
 		1028A79C1FAE79D0009CF5C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1028A79B1FAE79D0009CF5C9 /* Assets.xcassets */; };
 		1028A79F1FAE79D0009CF5C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1028A79D1FAE79D0009CF5C9 /* LaunchScreen.storyboard */; };
+		1028A7A81FAE7A00009CF5C9 /* SCNVector3+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1028A7A61FAE7A00009CF5C9 /* SCNVector3+Extension.swift */; };
+		1028A7A91FAE7A00009CF5C9 /* MeasureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1028A7A71FAE7A00009CF5C9 /* MeasureVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1028A78F1FAE79D0009CF5C9 /* MTArkitMeasure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTArkitMeasure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1028A7921FAE79D0009CF5C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1028A7941FAE79D0009CF5C9 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		1028A7961FAE79D0009CF5C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1028A7991FAE79D0009CF5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1028A79B1FAE79D0009CF5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1028A79E1FAE79D0009CF5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1028A7A01FAE79D0009CF5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1028A7A61FAE7A00009CF5C9 /* SCNVector3+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCNVector3+Extension.swift"; sourceTree = "<group>"; };
+		1028A7A71FAE7A00009CF5C9 /* MeasureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeasureVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		1028A7911FAE79D0009CF5C9 /* MTArkitMeasure */ = {
 			isa = PBXGroup;
 			children = (
+				1028A7A71FAE7A00009CF5C9 /* MeasureVC.swift */,
+				1028A7A61FAE7A00009CF5C9 /* SCNVector3+Extension.swift */,
 				1028A7921FAE79D0009CF5C9 /* AppDelegate.swift */,
 				1028A7941FAE79D0009CF5C9 /* art.scnassets */,
-				1028A7961FAE79D0009CF5C9 /* ViewController.swift */,
 				1028A7981FAE79D0009CF5C9 /* Main.storyboard */,
 				1028A79B1FAE79D0009CF5C9 /* Assets.xcassets */,
 				1028A79D1FAE79D0009CF5C9 /* LaunchScreen.storyboard */,
@@ -140,7 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1028A7971FAE79D0009CF5C9 /* ViewController.swift in Sources */,
+				1028A7A81FAE7A00009CF5C9 /* SCNVector3+Extension.swift in Sources */,
+				1028A7A91FAE7A00009CF5C9 /* MeasureVC.swift in Sources */,
 				1028A7931FAE79D0009CF5C9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

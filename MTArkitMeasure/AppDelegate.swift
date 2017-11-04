@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MTArkitMeasure
 //
-//  Created by Sri Adatrao on 11/4/17.
+//  Created by SA on 11/4/17.
 //  Copyright © 2017 Sris. All rights reserved.
 //
 

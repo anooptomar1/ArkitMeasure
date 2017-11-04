@@ -1,27 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A278a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4go-xj-1w3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tXr-a1-R10">
+        <!--MeasureVC-->
+        <scene sceneID="Uzt-CJ-XQw">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
+                <viewController id="4go-xj-1w3" customClass="MeasureVC" customModule="ARMeasureApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4gO-5y-xZ8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </arscnView>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4QU-H9-kt0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yj3-gD-SZ6">
+                                <rect key="frame" x="162" y="319" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DTS-TQ-5gF"/>
+                                    <constraint firstAttribute="width" secondItem="yj3-gD-SZ6" secondAttribute="height" multiplier="1:1" id="NCt-dE-bwf"/>
+                                </constraints>
+                                <state key="normal" image="plus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ivg-wL-fh7">
+                                <rect key="frame" x="0.0" y="607" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.79127275429999999" green="1" blue="0.96267456979999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="mJh-mR-h2p"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="stateButtonTapped:" destination="4go-xj-1w3" eventType="touchUpInside" id="p1y-mx-BBN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnu-EC-fIh">
+                                <rect key="frame" x="0.0" y="40" width="375" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.32445395799999999" blue="0.43306170970000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4QU-H9-kt0" firstAttribute="leading" secondItem="II3-dz-4Z8" secondAttribute="leading" id="1b5-cR-6Io"/>
+                            <constraint firstItem="Tnu-EC-fIh" firstAttribute="top" secondItem="II3-dz-4Z8" secondAttribute="top" constant="20" id="4wd-0q-WdS"/>
+                            <constraint firstItem="4QU-H9-kt0" firstAttribute="top" secondItem="II3-dz-4Z8" secondAttribute="top" id="AcT-8v-WQz"/>
+                            <constraint firstItem="yj3-gD-SZ6" firstAttribute="centerY" secondItem="II3-dz-4Z8" secondAttribute="centerY" id="X6s-5O-bPn"/>
+                            <constraint firstItem="Tnu-EC-fIh" firstAttribute="leading" secondItem="II3-dz-4Z8" secondAttribute="leading" id="ZGs-oW-YLX"/>
+                            <constraint firstItem="yj3-gD-SZ6" firstAttribute="centerX" secondItem="II3-dz-4Z8" secondAttribute="centerX" id="k2U-ud-6f6"/>
+                            <constraint firstItem="II3-dz-4Z8" firstAttribute="trailing" secondItem="Tnu-EC-fIh" secondAttribute="trailing" id="kG7-h5-xDG"/>
+                            <constraint firstItem="Ivg-wL-fh7" firstAttribute="leading" secondItem="II3-dz-4Z8" secondAttribute="leading" id="ome-Ru-b9V"/>
+                            <constraint firstItem="II3-dz-4Z8" firstAttribute="trailing" secondItem="Ivg-wL-fh7" secondAttribute="trailing" id="sdx-du-aMo"/>
+                            <constraint firstItem="II3-dz-4Z8" firstAttribute="bottom" secondItem="4QU-H9-kt0" secondAttribute="bottom" id="vsU-uK-JQJ"/>
+                            <constraint firstItem="II3-dz-4Z8" firstAttribute="trailing" secondItem="4QU-H9-kt0" secondAttribute="trailing" id="zWM-oj-YNg"/>
+                            <constraint firstItem="II3-dz-4Z8" firstAttribute="bottom" secondItem="Ivg-wL-fh7" secondAttribute="bottom" constant="20" id="zXF-4M-JRA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="II3-dz-4Z8"/>
+                    </view>
                     <connections>
-                        <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="centerPlusButton" destination="yj3-gD-SZ6" id="BjK-8C-340"/>
+                        <outlet property="scaleLabel" destination="Tnu-EC-fIh" id="doJ-GJ-ku7"/>
+                        <outlet property="sceneView" destination="4QU-H9-kt0" id="beD-4f-uRp"/>
+                        <outlet property="stateButton" destination="Ivg-wL-fh7" id="dlf-ZC-sMA"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D86-Hj-x7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="621.60000000000002" y="-302.6986506746627"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" width="220" height="220"/>
+    </resources>
 </document>
